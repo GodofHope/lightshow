@@ -6,7 +6,6 @@ module.exports = {
   extends: [
     'plugin:vue/essential',
     'eslint:all',
-    // 'eslint:recommended',
     '@vue/airbnb',
     '@vue/typescript'
   ],
@@ -19,6 +18,13 @@ module.exports = {
     // 'brace-style': ['error', '1tbs', { allowSingleLine: true }],
     'comma-dangle': ['error', 'never'],
     curly: ['error', 'multi'],
+    'max-len': [
+      'error',
+      {
+        code: 120, ignoreComments: true, ignoreStrings: true, ignoreUrls: true,
+        tabWidth: 2, ignoreTemplateLiterals: true, ignoreRegExpLiterals: true
+      }
+    ],
     'nonblock-statement-body-position': ['error', 'any'],
     'no-param-reassign': ['error', { props: false }]
     // 暂时禁用的自定义规则

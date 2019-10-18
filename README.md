@@ -1,16 +1,13 @@
-# Vue2 + Typescript + Vue Cli 4 + Vue Router + Vuex Template
+# 东北师大灯光秀网站
 
-[![作者：Mr.Hope](https://img.shields.io/badge/作者-Mr.Hope-blue.svg?style=for-the-badge)](https://mrhope.site)
-[![License](https://img.shields.io/github/license/mister-hope/blog?style=for-the-badge)](https://github.com/Mister-Hope/vue-template/blob/master/LICENSE)
+[![作者：Mr.Hope](https://img.shields.io/badge/作者-Mr.Hope-blue.svg)](https://mrhope.nenuyouth.com)
+[![Travis CI](https://travis-ci.com/nenuyouth/lightshow.svg?branch=master)](https://travis-ci.com/nenuyouth/lightshow)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a77608aa-e91b-4617-b434-8c7ac51d83b2/deploy-status)](https://app.netlify.com/sites/lightshow/deploys)
+> 本项目采用GPL V3.0开源协议
 
-[![Travis Ci](https://img.shields.io/travis/com/Mister-Hope/vue-template/master?style=flat-square&logo=travis-ci)](https://travis-ci.com/Mister-Hope/vue-template)
-[![Netlify Status](https://img.shields.io/netlify/f900457b-a946-4874-9fc9-ddf41395417c?style=flat-square&logo=netlify)](https://app.netlify.com/sites/vue2-ts/deploys)
+东北师范大学灯光秀网站。→ [点击前往](https://light.nenuyouth.com) | [备用地址](https://lightshow.netlify.com/)
 
-该项目为 Typescript 版 Vue 项目模板，使用 Node.js，基于 Vue 框架制作。→ [点击前往](https://vuets.nenuyouth.com) | [备用地址](https://vue2-ts.netlify.com/)
-
-## 组件介绍与使用手册
-
-可查看[自定义组件文档](https://mrhope.site/code/vue/component.html)。
+该项目使用 Node.js，基于 Vue 框架制作。
 
 ## 别名设置
 

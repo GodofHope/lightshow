@@ -1,21 +1,44 @@
 <!--
  * @Author: Mr.Hope
- * @Date: 2019-06-13 21:32:08
+ * @Date: 2019-05-13 17:43:05
  * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-10-18 16:52:22
- * @Description: 主页
+ * @LastEditTime: 2019-10-18 18:40:05
+ * @Description: 主页视图
 -->
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="~|/logo.png" />
-    <HelloWorld msg="欢迎来到你的Vue with TS APP" />
+  <div>
+    <div class="body">
+      <h1>东北师范大学灯光秀</h1>
+      <hr />
+      <div class="desc">视频源自腾讯视频，可能包含广告，请在广告结束后观看</div>
+      <iframe
+        allowfullscreen="true"
+        class="video"
+        src="//v.qq.com/txp/iframe/player.html?vid=w0883s5cvlu&show1080p=true&autoplay=true&mini=true&bullet=true"
+      />
+      <div class="desc3">
+        <router-link to="/hd">观看更清晰、无广告视频请点此</router-link>
+      </div>
+    </div>
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import Footer from '#/Footer.vue';
 
-@Component({ components: { HelloWorld } })
-export default class Main extends Vue { }
+@Component({ components: { Footer } })
+export default class Home extends Vue { }
 </script>
+<style>
+.video {
+  width: 100%;
+  height: 56vw;
+  text-align: center;
+  padding: 0 auto;
+}
+.body {
+  min-height: calc(100vh - 120px);
+}
+</style>

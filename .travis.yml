@@ -12,9 +12,9 @@ jobs:
 
     # 部署 master 分支
     - stage: deploy
-      name: "Deploy Demo"
+      name: "Deploy Website"
       script: npm run build
-      before_deploy: echo vue-demo.mrhope.site >> dist/CNAME
+      before_deploy: echo light.nenuyouth.com >> dist/CNAME
       deploy:
         provider: pages
         skip-cleanup: true

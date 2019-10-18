@@ -1,3 +1,10 @@
+/*
+ * @Author: Mr.Hope
+ * @LastEditors: Mr.Hope
+ * @Description: vue config file
+ * @Date: 2019-02-27 00:00:08
+ * @LastEditTime: 2019-10-18 18:32:17
+ */
 
 const path = require('path');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
@@ -91,7 +98,7 @@ const configureWebpack = config => {
  * @property {object} pwa Progressive App支持
  */
 module.exports = {
-  publicPath: process.env.DeployAddress || '/',
+  publicPath: process.env.BASE_URL || '/',
   productionSourceMap: false,
   crossorigin: 'anonymous',
   configureWebpack,
@@ -104,14 +111,13 @@ module.exports = {
     open: 'Google Chrome' // 开发环境打开浏览器
   },
   pwa: {
-    name: 'vue demo', // SW注册后的应用名称
-    themeColor: '#42b983', // 主题色
-    msTileColor: '#42b983', // 微软磁贴颜色
+    name: '灯光秀', // SW注册后的应用名称
+    themeColor: '#2ecc71', // 主题色
+    msTileColor: '#2ecc71', // 微软磁贴颜色
     appleMobileWebAppCapable: 'yes', // iOS启用SW
     appleMobileWebAppStatusBarStyle: 'default', // iOS状态栏样式,可选"black-translucent","black","default"
     iconPaths: { // 图标路径
       favicon32: 'img/icons/favicon-32.png',
-      favicon16: 'img/icons/favicon-16.png',
       appleTouchIcon: 'img/icons/apple-icon-152.png',
       maskIcon: 'img/icons/safari-pinned-tab.svg',
       msTileImage: 'img/icons/mstile-150.png'
@@ -126,9 +132,9 @@ module.exports = {
       maximumFileSizeToCacheInBytes: '10485760'
     },
     manifestOptions: { // 定义 manifest.json
-      name: 'vuets',
-      short_name: 'vuets',
-      description: 'vue + ts + router + vuex 项目模板',
+      name: 'lightshow in NENU',
+      short_name: 'lightshow',
+      description: '东北师大灯光秀',
       icons: [
         {
           src: '/img/icons/chrome-192.png',
@@ -144,7 +150,7 @@ module.exports = {
       start_url: './index.html',
       display: 'standalone',
       background_color: '#ffffff',
-      theme_color: '#42b983'
+      theme_color: '#2ecc71'
     }
   }
 };
