@@ -21,8 +21,13 @@ module.exports = {
     'max-len': [
       'error',
       {
-        code: 120, ignoreComments: true, ignoreStrings: true, ignoreUrls: true,
-        tabWidth: 2, ignoreTemplateLiterals: true, ignoreRegExpLiterals: true
+        code: 120,
+        ignoreComments: true,
+        ignoreStrings: true,
+        ignoreUrls: true,
+        tabWidth: 2,
+        ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true
       }
     ],
     'nonblock-statement-body-position': ['error', 'any'],

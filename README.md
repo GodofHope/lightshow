@@ -1,9 +1,10 @@
 # 东北师大灯光秀网站
 
-[![作者：Mr.Hope](https://img.shields.io/badge/作者-Mr.Hope-blue.svg)](https://mrhope.nenuyouth.com)
-[![Travis CI](https://travis-ci.com/nenuyouth/lightshow.svg?branch=master)](https://travis-ci.com/nenuyouth/lightshow)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a77608aa-e91b-4617-b434-8c7ac51d83b2/deploy-status)](https://app.netlify.com/sites/lightshow/deploys)
-> 本项目采用GPL V3.0开源协议
+[![作者：Mr.Hope](https://img.shields.io/badge/作者-Mr.Hope-blue.svg?style=for-the-badge)](https://mrhope.nenuyouth.com)
+[![License](https://img.shields.io/github/license/nenuyouth/lightshow?style=for-the-badge)](https://github.com/nenuyouth/lightshow/blob/master/LICENSE)
+
+[![Travis Ci](https://img.shields.io/travis/com/nenuyouth/lightshow/master?style=flat-square&logo=travis-ci)](https://travis-ci.com/nenuyouth/lightshow)
+[![Netlify Status](https://img.shields.io/netlify/a77608aa-e91b-4617-b434-8c7ac51d83b2?style=flat-square&logo=netlify)](https://app.netlify.com/sites/lightshow/deploys)
 
 东北师范大学灯光秀网站。→ [点击前往](https://light.nenuyouth.com) | [备用地址](https://lightshow.netlify.com/)
 
@@ -16,13 +17,13 @@
 - |：`src/assets`
 - %：`src/utils`
 
-## Linter配置
+## Linter 配置
 
 项目已有自己的一套项目风格预设。
 
 启动项目之后，请严格按照Linter提示格式化代码。项目不应包含任何无法通过Linter配置检查的代码。
 
-## Node.js库使用
+## Node.js 库使用
 
 ### 项目使用库
 
@@ -39,7 +40,7 @@
 
 #### 第三方库
 
-- axios(基于promise的html访问功能)
+- axios(基于 promise 的 html 访问功能)
   > 在本demo中未使用
 - register-service-worker
 - vue-wechat-title(设置网页标题)
@@ -50,29 +51,23 @@
 - Vue
 - Vuex
 - Vue-Router
-- Viewerjs
-- Tinycolor2
-- Axios
-  > 在本demo中未使用
-- jQuery
-  > 在本demo中未使用
 
 ### 开发依赖
 
-#### Vue-cli相关
+#### Vue-cli 插件
 
-- @vue/cli-plugin-babel
-- @vue/cli-plugin-pwa
-- @vue/cli-service
-
-#### 代码打包相关
-
-- babel-plugin-import
-- fibers
+- babel
+- e2e-cypress
+- eslint
+- pwa
+- router
+- typescript
+- unit-mocha
+- vuex
 
 #### 开发语言相关
 
-- vue-template-compiler(vue单文件编译器)
+- vue-template-compiler (vue单文件编译器)
 - sass
 - sass-loader
 - typescript
@@ -85,7 +80,6 @@
 - @vue/cli-plugin-eslint
 - @vue/eslint-config-airbnb
 - @vue/eslint-config-typescript
-- @vue/cli-plugin-typescript
 
 ## 初始化项目
 
