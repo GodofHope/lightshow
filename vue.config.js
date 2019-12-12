@@ -3,7 +3,7 @@
  * @LastEditors: Mr.Hope
  * @Description: vue config file
  * @Date: 2019-02-27 00:00:08
- * @LastEditTime: 2019-10-18 18:32:17
+ * @LastEditTime: 2019-12-12 23:26:45
  */
 
 const path = require('path');
@@ -12,19 +12,21 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 // 判断环境
 const isProduction = process.env.NODE_ENV === 'production';
 
+/** 别名配置 */
+const myaliasconfig = {
+  '|': path.resolve(__dirname, 'src/assets/'),
+  '#': path.resolve(__dirname, 'src/components/'),
+  '%': path.resolve(__dirname, 'src/utils/')
+};
+
 /**
  * @description: Webpack配置
  * @param {object} config Webpack配置
  * @returns {void}
  */
+// eslint-disable-next-line max-lines-per-function
 const configureWebpack = config => {
-  const myaliasconfig = {
-    '|': path.resolve(__dirname, 'src/assets/'),
-    '#': path.resolve(__dirname, 'src/components/'),
-    '%': path.resolve(__dirname, 'src/utils/')
-  };
-
-  config.resolve.alias = { ...config.resolve.alias || {}, ...myaliasconfig }; // 配置解析别名，可以简写
+  config.resolve.alias = { ...(config.resolve.alias || {}), ...myaliasconfig }; // 配置解析别名，可以简写
   config.resolve.modules = [path.resolve(__dirname, 'src'), 'node_modules']; // 配置模块解析方式，可加快解析速度
 
   // 生产环境配置
@@ -61,7 +63,8 @@ const configureWebpack = config => {
             test: /[\\/]node_modules[\\/]/u,
             priority: -10
           },
-          combine: { // 默认块，最小重用两次，优先级最低，不包含已有的chunk内容
+          combine: {
+            // 默认块，最小重用两次，优先级最低，不包含已有的chunk内容
             minChunks: 2,
             priority: -20,
 
@@ -73,11 +76,15 @@ const configureWebpack = config => {
     };
   } else config.devtool = 'source-map';
 
-  if (process.env.ANALYZE) // 分析打包后代码
-    config.plugins.push(new BundleAnalyzerPlugin({ // 使用 webpack 分析插件
-      analyzerPort: 0, // 让 node 使用随机端口
-      defaultSizes: 'gzip' // 默认展示 gzip 大小
-    }));
+  if (process.env.ANALYZE)
+    // 分析打包后代码
+    config.plugins.push(
+      new BundleAnalyzerPlugin({
+        // 使用 webpack 分析插件
+        analyzerPort: 0, // 让 node 使用随机端口
+        defaultSizes: 'gzip' // 默认展示 gzip 大小
+      })
+    );
 };
 
 /**
@@ -104,7 +111,8 @@ module.exports = {
   configureWebpack,
   devServer: {
     compress: true, // 启用gzip压缩
-    overlay: { // 浮层
+    // 浮层
+    overlay: {
       warnings: false,
       errors: true
     },
@@ -116,22 +124,21 @@ module.exports = {
     msTileColor: '#2ecc71', // 微软磁贴颜色
     appleMobileWebAppCapable: 'yes', // iOS启用SW
     appleMobileWebAppStatusBarStyle: 'default', // iOS状态栏样式,可选"black-translucent","black","default"
-    iconPaths: { // 图标路径
+    // 图标路径
+    iconPaths: {
       favicon32: 'img/icons/favicon-32.png',
       appleTouchIcon: 'img/icons/apple-icon-152.png',
       maskIcon: 'img/icons/safari-pinned-tab.svg',
       msTileImage: 'img/icons/mstile-150.png'
     },
     // 配置 workbox 插件
-    workboxPluginMode: 'InjectManifest',
+    workboxPluginMode: 'GenerateSW',
     workboxOptions: {
-      swSrc: 'src/service-worker/serviceWorker.js', // Service-worker脚本路径
-      swDest: 'service-worker/service-worker.js', // serviceworker存放地点
-      importWorkboxFrom: 'local', // service worker引入方式
-      importsDirectory: 'service-worker', // service-worker文件存放路径
-      maximumFileSizeToCacheInBytes: '10485760'
+      importWorkboxFrom: 'local', // service worker 引入方式
+      importsDirectory: 'service-worker' // service-worker 文件存放路径
     },
-    manifestOptions: { // 定义 manifest.json
+    manifestOptions: {
+      // 定义 manifest.json
       name: 'lightshow in NENU',
       short_name: 'lightshow',
       description: '东北师大灯光秀',
