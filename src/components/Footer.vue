@@ -8,9 +8,10 @@
     <div class="footerCtn">
       <div>走出半生，归来仍是东师青年——</div>
       <div class="footLogo rotate">
-        <img src="~|/logo.png" style="width:100%;height:100%;" />
+        <img src="~|/logo.png" style="width: 100%; height: 100%;" />
       </div>
-    </div>Copyright © 东北师范大学学生会
+    </div>
+    Copyright © 东北师范大学学生会
     <div>网站制作:Mr.Hope</div>
   </div>
 </template>

@@ -5,7 +5,6 @@
  */
 import Home from "@/views/Home.vue";
 import Page404 from "@/views/Page404.vue";
-import Vue, { VueConstructor } from "vue";
 
 const route = [
   {
@@ -22,6 +21,7 @@ const route = [
      * this generates a separate chunk (about.[hash].js) for this route
      * which is lazy-loaded when the route is visited.
      */
+    // eslint-disable-next-line
     component: () => import("@/views/HD.vue"),
   },
   {

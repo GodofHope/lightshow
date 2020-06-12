@@ -18,13 +18,13 @@
 
 项目已有自己的一套项目风格预设。
 
-启动项目之后，请严格按照Linter提示格式化代码。项目不应包含任何无法通过Linter配置检查的代码。
+启动项目之后，请严格按照 Linter 提示格式化代码。项目不应包含任何无法通过 Linter 配置检查的代码。
 
 ## Node.js 库使用
 
 ### 项目使用库
 
-#### Vue官方库
+#### Vue 官方库
 
 > 跟进使用最新版官方库
 
@@ -38,12 +38,12 @@
 #### 第三方库
 
 - axios(基于 promise 的 html 访问功能)
-  > 在本demo中未使用
+  > 在本 demo 中未使用
 - register-service-worker
 - vue-wechat-title(设置网页标题)
-  > 在本demo中未使用
+  > 在本 demo 中未使用
 
-#### CDN引入
+#### CDN 引入
 
 - Vue
 - Vuex
@@ -64,7 +64,7 @@
 
 #### 开发语言相关
 
-- vue-template-compiler (vue单文件编译器)
+- vue-template-compiler (vue 单文件编译器)
 - sass
 - sass-loader
 - typescript
@@ -107,19 +107,19 @@ npm run serve
 
 ### 构建生产环境
 
-- 构建现代输出（ES5标准支持，有fallback）
+- 构建现代输出（ES5 标准支持，有 fallback）
 
 ```bash
 npm run build
 ```
 
-- 构建常规输出（ES5标准支持，有fallback）
+- 构建常规输出（ES5 标准支持，有 fallback）
 
 ```bash
 npm run normBuild
 ```
 
-> 执行构建，将构建成功的网页输出至/dist目录
+> 执行构建，将构建成功的网页输出至/dist 目录
 
 ```bash
 npm run rebuild
@@ -137,7 +137,7 @@ npm run normRebuild
 start deploy.bat
 ```
 
-> 执行构建，将构建成功的网站推送到Github Pages与Gitee Pages
+> 执行构建，将构建成功的网站推送到 Github Pages 与 Gitee Pages
 
 #### 执行文件提示和文件修复
 
@@ -165,15 +165,15 @@ npm run normAnal
 npm run browser
 ```
 
-#### 输出Webpack模式打包配置
+#### 输出 Webpack 模式打包配置
 
-- 输出现代构建打包配置至当前目录的moderm.js
+- 输出现代构建打包配置至当前目录的 moderm.js
 
 ```bash
 npm run inspect
 ```
 
-- 输出普通构建打包配置至当前目录的normal.js
+- 输出普通构建打包配置至当前目录的 normal.js
 
 ```bash
 npm run normInspect

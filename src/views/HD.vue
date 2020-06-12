@@ -14,14 +14,19 @@
       controls="controls"
       preload="auto"
       style="width: 100%;"
-    >您的浏览器版本无法播放视频，请您更换浏览器。</video>
-    <div class="desc2">网站部署在Github上，可能会造成网络缓慢，请您耐心等待</div>
+    >
+      您的浏览器版本无法播放视频，请您更换浏览器。
+    </video>
+    <div class="desc2">
+      网站部署在Github上，可能会造成网络缓慢，请您耐心等待
+    </div>
     <div class="desc2">
       <a
         href="http://light.nenuyouth.com/lightshow.mp4"
         rel="noopener noreferrer"
         target="_blank"
-      >点击下载视频</a>
+        >点击下载视频</a
+      >
     </div>
     <Footer />
   </div>
