@@ -1,14 +1,12 @@
 <!--
  * @Author: Mr.Hope
  * @Date: 2019-05-13 17:43:05
- * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-10-18 11:52:40
  * @Description: 页脚
 -->
 <template>
   <div class="Footer">
     <div class="footerCtn">
-      <div>行遍千山万水，归来仍是东师青年——</div>
+      <div>走出半生，归来仍是东师青年——</div>
       <div class="footLogo rotate">
         <img src="~|/logo.png" style="width:100%;height:100%;" />
       </div>
@@ -18,10 +16,10 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from "vue-property-decorator";
 
 @Component
-export default class Footer extends Vue { }
+export default class Footer extends Vue {}
 </script>
 <style scoped lang="stylus">
 .Footer

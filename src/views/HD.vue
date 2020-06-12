@@ -1,8 +1,6 @@
 <!--
  * @Author: Mr.Hope
  * @Date: 2019-06-12 23:41:28
- * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-10-18 19:35:01
  * @Description: 高清视频观看
 -->
 <template>
@@ -30,8 +28,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import Footer from '#/Footer.vue';
+import { Component, Prop, Vue } from "vue-property-decorator";
+import Footer from "#/Footer.vue";
 
 @Component({ components: { Footer } })
 export default class HD extends Vue {
@@ -48,8 +46,7 @@ export default class HD extends Vue {
   }
 }
 </script>
-<style scoped>
-.body {
-  min-height: calc(100vh - 120px);
-}
+<style lang="stylus" scoped>
+.body
+  min-height calc(100vh - 120px)
 </style>

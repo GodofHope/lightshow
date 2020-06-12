@@ -1,8 +1,6 @@
 <!--
  * @Author: Mr.Hope
  * @Date: 2019-05-18 23:22:22
- * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-10-18 15:30:34
  * @Description: APP主视图
 -->
 <template>

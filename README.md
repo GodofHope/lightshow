@@ -1,12 +1,9 @@
 # 东北师大灯光秀网站
 
-[![作者：Mr.Hope](https://img.shields.io/badge/作者-Mr.Hope-blue.svg?style=for-the-badge)](https://mrhope.nenuyouth.com)
+[![作者：Mr.Hope](https://img.shields.io/badge/作者-Mr.Hope-blue.svg?style=for-the-badge)](https://mrhope.site)
 [![License](https://img.shields.io/github/license/nenuyouth/lightshow?style=for-the-badge)](https://github.com/nenuyouth/lightshow/blob/master/LICENSE)
 
-[![Travis Ci](https://img.shields.io/travis/com/nenuyouth/lightshow/master?style=flat-square&logo=travis-ci)](https://travis-ci.com/nenuyouth/lightshow)
-[![Netlify Status](https://img.shields.io/netlify/a77608aa-e91b-4617-b434-8c7ac51d83b2?style=flat-square&logo=netlify)](https://app.netlify.com/sites/lightshow/deploys)
-
-东北师范大学灯光秀网站。→ [点击前往](https://light.nenuyouth.com) | [备用地址](https://lightshow.netlify.com/)
+东北师范大学灯光秀网站。→ [点击前往](https://light.innenu.com)
 
 该项目使用 Node.js，基于 Vue 框架制作。
 

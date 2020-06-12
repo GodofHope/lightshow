@@ -1,21 +1,20 @@
 /*
  * @Author: Mr.Hope
  * @Date: 2019-06-13 21:32:08
- * @LastEditors: Mr.Hope
- * @LastEditTime: 2019-10-18 16:15:50
  * @Description: 主脚本文件
  */
-import Vue from 'vue';
-import App from './App.vue';
 
-// 引入配置好的VueRouter与Vuex
-import router from './router';
-import store from './store';
+import Vue, { VNode } from "vue";
+import App from "./App.vue";
 
-// 引入Service-Worker
-import registerSW from './service-worker/registerSW';
+// 引入配置好的 vue-router 与 vuex
+import router from "./router";
+import store from "./store";
 
-// 注册service worker
+// 引入 service worker
+import registerSW from "./service-worker/registerSW";
+
+// 注册 service worker
 registerSW(store);
 
 Vue.config.productionTip = false;
@@ -23,5 +22,5 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
-  render: h => h(App)
-}).$mount('#app');
+  render: (h): VNode => h(App),
+}).$mount("#app");

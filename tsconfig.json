@@ -11,31 +11,14 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
-    "types": [
-      "webpack-env",
-      "mocha",
-      "chai"
-    ],
+    "types": ["webpack-env", "mocha", "chai"],
     "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "|/*": [
-        "src/assets/*"
-      ],
-      "#/*": [
-        "src/components/*"
-      ],
-      "%/*": [
-        "src/utils/*"
-      ]
+      "@/*": ["src/*"],
+      "|/*": ["src/assets/*"],
+      "#/*": ["src/components/*"],
+      "%/*": ["src/utils/*"]
     },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
   "include": [
     "src/**/*.ts",
@@ -44,8 +27,5 @@
     "tests/**/*.ts",
     "tests/**/*.tsx"
   ],
-  "exclude": [
-    "dist",
-    "node_modules"
-  ]
+  "exclude": ["dist", "node_modules"]
 }
