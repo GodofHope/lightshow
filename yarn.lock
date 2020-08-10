@@ -1211,10 +1211,10 @@
     mocha "^6.2.2"
     mochapack "^1.1.15"
 
-"@vue/cli-plugin-vuex@^4.4.3":
-  version "4.4.3"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-vuex/-/cli-plugin-vuex-4.4.3.tgz#e6f34eee0c61cf46ed114d06546d870eb97ee2b4"
-  integrity sha512-gw+rNF05hcWSYujVPgkS/+9u8A5lwqXtjaYxRGzN0GKU5kHmhEJn2+kNKzkeOCnWAh+Cvq7pY8SapKV10df9pA==
+"@vue/cli-plugin-vuex@^4.4.3", "@vue/cli-plugin-vuex@^4.5.2":
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-vuex/-/cli-plugin-vuex-4.5.2.tgz#802db021bcc4afe0909492098aae8ea4b5e4b3cb"
+  integrity sha512-WAGx3WrhL78hpuwd1innSfflLuNkMiS3zz+sO8p1olhE9bLWdrIJ2jxHgrCCW6PFMwwY/h85GZNHUJvASPmvAQ==
 
 "@vue/cli-service@^4.4.3":
   version "4.4.3"
